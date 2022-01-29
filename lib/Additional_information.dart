@@ -18,20 +18,19 @@ class AdditionalInfo extends StatelessWidget {
         child: Column(
           children: [
             ListTile(
-              leading: Icon(Icons.share),
-              title: Text(
-                'Share Dukan App',
-                style: TextStyle(color: Colors.grey),
-              ),
-              trailing: Icon(Icons.arrow_forward),
-            ),
+                leading: Icon(Icons.share),
+                title: Text(
+                  'Share Dukan App',
+                  style: TextStyle(color: Colors.grey),
+                ),
+                trailing: Icon(Icons.arrow_forward_ios)),
             ListTile(
               leading: Icon(Icons.chat_bubble_outline_outlined),
               title: Text(
                 "Change Langauge",
                 style: TextStyle(color: Colors.grey),
               ),
-              trailing: Icon(Icons.arrow_forward),
+              trailing: Icon(Icons.arrow_forward_ios),
             ),
             ListTile(
               leading: FaIcon(FontAwesomeIcons.whatsapp),
@@ -71,19 +70,19 @@ class AdditionalInfo extends StatelessWidget {
             ),
             Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.only(bottom:20),
-                  child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
+              padding: const EdgeInsets.only(bottom: 20),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
                   Text(
                     "Version",
                     style: TextStyle(color: Colors.grey),
                   ),
                   SizedBox(height: 5),
                   Text('2.4.2'),
-              ],
-            ),
-                ))
+                ],
+              ),
+            ))
           ],
         ),
       ),
